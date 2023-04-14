@@ -2,20 +2,50 @@
     "type": "vStack",
     "id": "b728af9c-d866-11ed-afa1-0242ac120002",
     "alignment": "leading",
-    "components": [
+    "views": [
         {
             "type": "image",
             "id": "c26868fc-d866-11ed-afa1-0242ac120002",
             "aspectRatio": 1.5,
             "contentMode": "fit",
-            "url": "https://i.stack.imgur.com/WF7DR.jpg"
+            "url": "https://i.stack.imgur.com/WF7DR.jpg",
+            "modifiers": [
+                {
+                    "type": "padding",
+                    "insets": [32, 12, 32, 12]
+                }
+            ]
         },
         {
             "type": "text",
             "id": "c7101512-d866-11ed-afa1-0242ac120002",
             "content": "Some text from JSON blablabla",
             "fontSize": 12,
-            "alignment": "leading"
+            "alignment": "leading",
+            "modifiers": [
+                {
+                    "type": "background",
+                    "view": {
+                        "id": "c7101512-d866-11ed-afa1-0242ac120003",
+                        "type": "color",
+                        "model": "#00FF00"
+                    }
+                },
+                {
+                    "type": "padding",
+                    "insets": [12, 24, 12, 24]
+                }
+            ]
+        }
+    ],
+    "modifiers": [
+        {
+            "type": "background",
+            "view": {
+                "id": "c7101512-d866-11ed-afa1-0242ac120003",
+                "type": "color",
+                "model": "#0000FF"
+            }
         }
     ]
 }
