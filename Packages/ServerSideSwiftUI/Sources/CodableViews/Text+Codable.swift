@@ -4,7 +4,6 @@ import SwiftUI
 public struct CodableText: View, CodableViewVariant {
     
     
-    public var id: UUID = UUID()
     var alignment: TextAlignment
     var content: String
     var lineLimit: Int?

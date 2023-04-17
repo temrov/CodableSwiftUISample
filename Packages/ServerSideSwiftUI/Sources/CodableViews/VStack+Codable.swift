@@ -11,7 +11,6 @@ import SwiftUI
 public struct CodableVStack: View, CodableViewVariant {
     
     
-    public var id: UUID = UUID()
     var alignment: HorizontalAlignment
     var spacing: CGFloat?
     var views: [CodableView]
@@ -19,7 +18,7 @@ public struct CodableVStack: View, CodableViewVariant {
     public var body: some View {
         
         VStack(alignment: alignment, spacing: spacing) {
-            ForEach(views, id: \.id) { ViewFactory.view(for: $0) }
+            ForEach(views.indices, id: \.self) { ViewFactory.view(for: views[$0]) }
         }
     }
 }

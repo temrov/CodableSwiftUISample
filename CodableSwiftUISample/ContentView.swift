@@ -16,7 +16,7 @@ class LocalJSONFileSource: ObservableObject {
     
     init() {
         let filePath = Bundle.main.path(forResource: "Screen", ofType: "json")!
-        self.pathURL = URL(filePath: filePath)
+        self.pathURL = URL(fileURLWithPath: filePath)
         self.fileMonitor = FileMonitor(url: pathURL)
         
         fileMonitor.fileDidChange = { [weak self] in

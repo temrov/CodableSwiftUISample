@@ -1,11 +1,9 @@
 {
     "type": "vStack",
-    "id": "b728af9c-d866-11ed-afa1-0242ac120002",
     "alignment": "leading",
     "views": [
         {
             "type": "image",
-            "id": "c26868fc-d866-11ed-afa1-0242ac120002",
             "aspectRatio": 1.5,
             "contentMode": "fit",
             "url": "https://i.stack.imgur.com/WF7DR.jpg",
@@ -18,7 +16,6 @@
         },
         {
             "type": "text",
-            "id": "c7101512-d866-11ed-afa1-0242ac120002",
             "content": "Some text from JSON blablabla",
             "fontSize": 12,
             "alignment": "leading",
@@ -26,7 +23,6 @@
                 {
                     "type": "background",
                     "view": {
-                        "id": "c7101512-d866-11ed-afa1-0242ac120003",
                         "type": "color",
                         "model": "#00FF00"
                     }
@@ -42,7 +38,6 @@
         {
             "type": "background",
             "view": {
-                "id": "c7101512-d866-11ed-afa1-0242ac120003",
                 "type": "color",
                 "model": "#0000FF"
             }

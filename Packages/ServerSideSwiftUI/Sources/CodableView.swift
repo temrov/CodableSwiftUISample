@@ -2,7 +2,6 @@ import Foundation
 import SwiftUI
 
 public protocol CodableViewVariant: Decodable {
-    var id: UUID { get }
 }
 
 @dynamicMemberLookup

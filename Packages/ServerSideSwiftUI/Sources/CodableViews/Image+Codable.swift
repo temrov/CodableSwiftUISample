@@ -11,7 +11,6 @@ import SwiftUI
 
 public struct CodableImage: View, CodableViewVariant {
     
-    public var id: UUID = UUID()
     var url: String
     let aspectRatio: CGFloat?
     let contentMode: ContentMode?

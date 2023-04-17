@@ -16,11 +16,10 @@ public struct CodableColor: View, CodableViewVariant {
 
     @Environment(\.colorScheme) var colorScheme
 
-    public var id: UUID = UUID()
     let model: ColorModel
     
     enum CodingKeys: String, CodingKey {
-        case id, model
+        case model
     }
     
     public var body: Color {
@@ -61,7 +60,6 @@ struct ColorModel {
     let light: UInt32?
     let dark: UInt32?
     let alpha: Double?
-    
     
 }
 

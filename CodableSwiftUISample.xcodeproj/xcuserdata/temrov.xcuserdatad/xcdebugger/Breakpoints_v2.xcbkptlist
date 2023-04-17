@@ -130,24 +130,8 @@
             filePath = "Packages/ServerSideSwiftUI/Sources/CodableViewModifier.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "init(from:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E053FA0A-6B56-41F2-8175-6B48725F16CA"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Packages/ServerSideSwiftUI/Sources/CodableView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "init(from:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -162,8 +146,8 @@
             filePath = "Packages/ServerSideSwiftUI/Sources/CodableViews/Color+Codable.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "init(from:)"
             landmarkType = "7">
          </BreakpointContent>
