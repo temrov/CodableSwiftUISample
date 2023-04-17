@@ -25,6 +25,31 @@ public struct CodableVStack: View, CodableViewVariant {
 
 extension HorizontalAlignment: Decodable {
     public init(from decoder: Decoder) throws {
-        self = .leading
+        let container = try decoder.singleValueContainer()
+        let rawAlignment = try container.decode(String.self)
+        switch rawAlignment {
+        case "center":
+            self = .center
+        case "leading":
+            self = .leading
+        case "trailing":
+            self = .trailing
+        case "listRowSeparatorLeading":
+            if #available(iOS 16.0, *) {
+                self = .listRowSeparatorLeading
+            } else {
+                // Fallback on earlier versions
+                self = .leading
+            }
+        case "listRowSeparatorTrailing":
+            if #available(iOS 16.0, *) {
+                self = .listRowSeparatorTrailing
+            } else {
+                // Fallback on earlier versions
+                self = .trailing
+            }
+        default:
+            self = .leading
+        }
     }
 }

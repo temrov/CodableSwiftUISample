@@ -1,6 +1,6 @@
 {
     "type": "vStack",
-    "alignment": "leading",
+    "alignment": "center",
     "views": [
         {
             "type": "image",
