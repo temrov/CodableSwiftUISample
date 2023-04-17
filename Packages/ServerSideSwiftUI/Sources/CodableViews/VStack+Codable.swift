@@ -10,7 +10,6 @@ import SwiftUI
 
 public struct CodableVStack: View, CodableViewVariant {
     
-    
     var alignment: HorizontalAlignment
     var spacing: CGFloat?
     var views: [CodableView]
@@ -49,7 +48,7 @@ extension HorizontalAlignment: Decodable {
                 self = .trailing
             }
         default:
-            self = .leading
+            self = .center
         }
     }
 }

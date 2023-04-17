@@ -4,34 +4,14 @@ import SwiftUI
 public protocol CodableViewVariant: Decodable {
 }
 
-@dynamicMemberLookup
 public enum CodableView {
     case list(CodableList, [CodableViewModifier])
     case text(CodableText, [CodableViewModifier])
     case button(CodableButton, [CodableViewModifier])
     case image(CodableImage, [CodableViewModifier])
     case vStack(CodableVStack, [CodableViewModifier])
+    case hStack(CodableHStack, [CodableViewModifier])
     case color(CodableColor, [CodableViewModifier])
-}
-
-
-public extension CodableView {
-    subscript<T>(dynamicMember keyPath: KeyPath<CodableViewVariant, T>) -> T {
-        switch self {
-        case let .list(list, _):
-            return list[keyPath: keyPath]
-        case let .text(text, _):
-            return text[keyPath: keyPath]
-        case let .button(button, _):
-            return button[keyPath: keyPath]
-        case let .image(image, _):
-            return image[keyPath: keyPath]
-        case let .vStack(vStack, _):
-            return vStack[keyPath: keyPath]
-        case let .color(view, _):
-            return view[keyPath: keyPath]
-        }
-    }
 }
 
 extension CodableView: Decodable {
@@ -54,6 +34,8 @@ extension CodableView: Decodable {
             self = .image(try CodableImage(from: decoder), modifiers)
         case "vStack":
             self = .vStack(try CodableVStack(from: decoder), modifiers)
+        case "hStack":
+            self = .hStack(try CodableHStack(from: decoder), modifiers)
         case "color":
             self = .color(try CodableColor(from: decoder), modifiers)
         default:

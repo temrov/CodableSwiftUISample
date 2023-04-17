@@ -21,16 +21,17 @@
             "alignment": "leading",
             "modifiers": [
                 {
+                    "type": "padding",
+                    "insets": [12, 24, 12, 24]
+                },
+                {
                     "type": "background",
                     "view": {
                         "type": "color",
                         "model": "#00FF00"
                     }
-                },
-                {
-                    "type": "padding",
-                    "insets": [12, 24, 12, 24]
                 }
+                
             ]
         }
     ],
@@ -39,7 +40,12 @@
             "type": "background",
             "view": {
                 "type": "color",
-                "model": "#0000FF"
+                "model": {
+                    "light": "#0000FF",
+                    "dark": "#FF00FF",
+                    "alpha": 0.4,
+                    "darkAlpha": 1
+                }
             }
         }
     ]

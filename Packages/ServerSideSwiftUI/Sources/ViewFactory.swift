@@ -22,6 +22,8 @@ public struct ViewFactory {
             applyViewModifiers(view: view, modifiers: modifiers)
         case let .vStack(view, modifiers):
             applyViewModifiers(view: view, modifiers: modifiers)
+        case let .hStack(view, modifiers):
+            applyViewModifiers(view: view, modifiers: modifiers)
         case let .color(view, modifiers):
             applyViewModifiers(view: view, modifiers: modifiers)
         }

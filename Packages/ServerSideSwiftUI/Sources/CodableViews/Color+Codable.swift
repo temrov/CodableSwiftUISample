@@ -27,16 +27,15 @@ public struct CodableColor: View, CodableViewVariant {
     }
     
     private func resultColor() -> Color {
-        if let colorName = model.name {
+        switch model {
+        case .name(let colorName):
             return Self.namedColors?.color(name: colorName) ?? .clear
+        case .hex(let light, let dark, let alpha, let darkAlpha):
+            if let dark, colorScheme == .dark {
+                return Color(rgb: dark, alpha: darkAlpha)
+            }
+            return Color(rgb: light, alpha: alpha)
         }
-        if colorScheme == .dark, let darkRGB = model.dark {
-            return Color(rgb: darkRGB, alpha: model.alpha ?? 1)
-        }
-        if let lightRGB = model.light {
-            return Color(rgb: lightRGB, alpha: model.alpha ?? 1)
-        }
-        return Color.clear
     }
 }
 
@@ -54,20 +53,16 @@ extension Color {
     }
 }
 
-struct ColorModel {
-    
-    let name: String?
-    let light: UInt32?
-    let dark: UInt32?
-    let alpha: Double?
-    
+public enum ColorModel {
+    case name(String)
+    case hex(light: UInt32, dark: UInt32?, alpha: Double = 1, darkAlpha: Double = 1)
 }
 
 extension ColorModel: Decodable {
     enum CodingKeys: String, CodingKey {
-        case name, light, dark, alpha
+        case name, light, dark, alpha, darkAlpha
     }
-    init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         do {
             let container = try decoder.singleValueContainer()
             let value = try container.decode(String.self)
@@ -75,14 +70,22 @@ extension ColorModel: Decodable {
                 throw NSError()
             }
             if let hexValue = UInt32(hexColor: value) {
-                self.init(name: nil, light: hexValue, dark: nil, alpha: nil)
+                self = .hex(light: hexValue, dark: nil)
                 return
             }
-            self.init(name: value, light: nil, dark: nil, alpha: nil)
-            
+            self = .name(value)
         }
         catch {
-            throw error
+            let container = try decoder.container(keyedBy: CodingKeys.self)
+            if let name = try container.decodeIfPresent(String.self, forKey: .name) {
+                self = .name(name)
+                return
+            }
+            let light = try container.decode(String.self, forKey: .light)
+            let dark = try container.decodeIfPresent(String.self, forKey: .dark)
+            let alpha = try container.decodeIfPresent(Double.self, forKey: .alpha)
+            let darkAlpha = try container.decodeIfPresent(Double.self, forKey: .darkAlpha)
+            self = .hex(light: UInt32(hexColor: light) ?? 0, dark: UInt32(hexColor: dark ?? ""), alpha: alpha ?? 1, darkAlpha: darkAlpha ?? alpha ?? 1)
         }
     }
 }

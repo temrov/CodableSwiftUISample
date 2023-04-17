@@ -34,8 +34,8 @@
             filePath = "Packages/ServerSideSwiftUI/Sources/ViewFactory.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "body(content:)"
             landmarkType = "7">
             <Locations>
@@ -69,6 +69,21 @@
                   endingLineNumber = "41"
                   offsetFromSymbolStart = "624">
                </Location>
+               <Location
+                  uuid = "1B102663-43FA-41C2-935E-456FE49D67C3 - 3d6f4539d9d19a5b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ServerSideSwiftUI.RecursiveViewModifier.body(content: SwiftUI._ViewModifier_Content&lt;ServerSideSwiftUI.RecursiveViewModifier&gt;) -&gt; some"
+                  moduleName = "CodableSwiftUISample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/temrov/Documents/Xcode%20Projects/CodableSwiftUISample/Packages/ServerSideSwiftUI/Sources/ViewFactory.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "624">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -82,8 +97,8 @@
             filePath = "Packages/ServerSideSwiftUI/Sources/ViewFactory.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "body(content:)"
             landmarkType = "7">
             <Locations>
@@ -117,6 +132,21 @@
                   endingLineNumber = "43"
                   offsetFromSymbolStart = "832">
                </Location>
+               <Location
+                  uuid = "3DAE4134-1595-4CF9-B9CC-D536B43057DC - 3d6f4539d9d19a99"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ServerSideSwiftUI.RecursiveViewModifier.body(content: SwiftUI._ViewModifier_Content&lt;ServerSideSwiftUI.RecursiveViewModifier&gt;) -&gt; some"
+                  moduleName = "CodableSwiftUISample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/temrov/Documents/Xcode%20Projects/CodableSwiftUISample/Packages/ServerSideSwiftUI/Sources/ViewFactory.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "832">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -146,10 +176,90 @@
             filePath = "Packages/ServerSideSwiftUI/Sources/CodableViews/Color+Codable.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "init(from:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D1E257FF-A94A-4D35-B2E6-121EED94CB5A - da7ad8f96727e1a2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ServerSideSwiftUI.ColorModel.init(from: Swift.Decoder) throws -&gt; ServerSideSwiftUI.ColorModel"
+                  moduleName = "CodableSwiftUISample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/temrov/Documents/Xcode%20Projects/CodableSwiftUISample/Packages/ServerSideSwiftUI/Sources/CodableViews/Color+Codable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "196">
+               </Location>
+               <Location
+                  uuid = "D1E257FF-A94A-4D35-B2E6-121EED94CB5A - da7ad8f96727e1a2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ServerSideSwiftUI.ColorModel.init(from: Swift.Decoder) throws -&gt; ServerSideSwiftUI.ColorModel"
+                  moduleName = "CodableSwiftUISample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/temrov/Documents/Xcode%20Projects/CodableSwiftUISample/Packages/ServerSideSwiftUI/Sources/CodableViews/Color+Codable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "180">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "41ADE728-F5EC-4B04-AF1C-2DECBC869EEA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/ServerSideSwiftUI/Sources/CodableViews/Color+Codable.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "init(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "41ADE728-F5EC-4B04-AF1C-2DECBC869EEA - da7ad8f96727df2e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ServerSideSwiftUI.ColorModel.init(from: Swift.Decoder) throws -&gt; ServerSideSwiftUI.ColorModel"
+                  moduleName = "CodableSwiftUISample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/temrov/Documents/Xcode%20Projects/CodableSwiftUISample/Packages/ServerSideSwiftUI/Sources/CodableViews/Color+Codable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "1076">
+               </Location>
+               <Location
+                  uuid = "41ADE728-F5EC-4B04-AF1C-2DECBC869EEA - da7ad8f96727df2e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ServerSideSwiftUI.ColorModel.init(from: Swift.Decoder) throws -&gt; ServerSideSwiftUI.ColorModel"
+                  moduleName = "CodableSwiftUISample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/temrov/Documents/Xcode%20Projects/CodableSwiftUISample/Packages/ServerSideSwiftUI/Sources/CodableViews/Color+Codable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "816">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
