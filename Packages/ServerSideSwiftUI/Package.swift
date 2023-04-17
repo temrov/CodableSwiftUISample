@@ -24,9 +24,5 @@ let package = Package(
             name: "ServerSideSwiftUI",
             dependencies: ["SDWebImageSwiftUI"],
             path: "Sources"),
-        .testTarget(
-            name: "ServerSideSwiftUITests",
-            dependencies: ["ServerSideSwiftUI"]
-            ),
     ]
 )
